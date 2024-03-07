@@ -44,10 +44,7 @@ h2 {
 h3 {
   font-size: var(--title-card-size);
 }
-/* p,
-a {
-  font-size: var(--p-text-size);
-} */
+
 body {
   color: var(--secondary-text-color);
   margin: 0;
@@ -65,11 +62,16 @@ header {
 
 .logo {
   margin-left: 10px;
+  width: 50px;
   align-self: center;
   color: var(--primary-text-color);
 }
+nav {
+  display: flex;
+  align-items: flex-end;
+}
 ul {
-  /* margin: 0; */
+  margin: 10px;
   list-style: none;
 }
 li {
@@ -83,7 +85,7 @@ i {
   color: var(--primary-text-color);
 }
 a {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 i {
   margin-top: 5px;
