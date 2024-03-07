@@ -145,7 +145,8 @@ h3 {
   padding: 10px 40px;
 }
 .card {
-  background-color: rgb(85, 85, 85);
+  /* rgb(85, 85, 85) */
+  background-color: var(--background-primary);
   margin: 20px;
   display: flex;
   flex-wrap: wrap;
