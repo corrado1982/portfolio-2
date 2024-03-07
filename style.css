@@ -1,0 +1,213 @@
+:root {
+  --sml-primary-text-size: 3em;
+  --sml-secondary-text-size: 2em;
+  --sml-title-card-size: 1.5em;
+  --sml-p-text-size: 0.8em;
+  --primary-text-size: 4em;
+  --secondary-text-size: 3em;
+  --title-card-size: 2em;
+  --p-text-size: 1em;
+  --primary-text-color: rgb(110, 231, 235);
+  --secondary-text-color: rgb(188, 244, 255);
+  --background-primary: rgb(0, 0, 0);
+  --background-secondary: rgb(58, 58, 58);
+  --border-color: rgb(158, 157, 157);
+}
+@font-face {
+  font-family: "ShareTechMono-Regular";
+  src: url(font/ShareTechMono-Regular.ttf) format(truetype);
+}
+p,
+a {
+  font-family: "ShareTechMono-Regular";
+  font-size: var(--p-text-size);
+}
+h1,
+h2,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#top-page {
+  margin: 50px 0 0 0;
+
+  /* font-size: var(--primary-text-size); */
+}
+
+h1 {
+  margin: 50px 0 0 0;
+  font-size: var(--primary-text-size);
+}
+h2 {
+  /* margin: 100px; */
+  font-size: var(--secondary-text-size);
+}
+h3 {
+  font-size: var(--title-card-size);
+}
+/* p,
+a {
+  font-size: var(--p-text-size);
+} */
+body {
+  color: var(--secondary-text-color);
+  margin: 0;
+  background-color: var(--background-primary);
+}
+header {
+  /* color: var(--primary-text-color); */
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--background-secondary);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  margin-left: 10px;
+  align-self: center;
+  color: var(--primary-text-color);
+}
+ul {
+  /* margin: 0; */
+  list-style: none;
+}
+li {
+  color: var(--primary-text-color);
+  /* text-decoration: none; */
+}
+a,
+i {
+  /* margin-left: 15px; */
+  /* text-decoration: none; */
+  color: var(--primary-text-color);
+}
+a {
+  margin-right: 10px;
+}
+i {
+  margin-top: 5px;
+}
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  /* margin: auto; */
+}
+.about-me-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1,
+h2 {
+  color: var(--primary-text-color);
+  display: flex;
+  justify-content: center;
+}
+#my-pic {
+  margin-top: 20px;
+  width: 400px;
+  border-radius: 200px;
+}
+.card-image {
+  width: 500px;
+  /* height: 300px; */
+  border-radius: 2px;
+  margin: auto 20px;
+}
+.img-container {
+  display: flex;
+  margin: 20px;
+}
+.about-me-description {
+  background-color: var(--background-secondary);
+  padding: 50px;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 2px solid var(--border-color);
+  margin: 10px;
+}
+.description {
+  /* margin: 0; */
+  /* background-color: var(--background-secondary); */
+  padding: 0 40px 0 40px;
+  width: 400px;
+}
+h3 {
+  color: var(--primary-text-color);
+  margin: 0;
+  padding: 10px 40px;
+}
+.card {
+  background-color: rgb(85, 85, 85);
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  border: 2px solid var(--border-color);
+  /* width: 1200px; */
+}
+.second-card {
+  flex-direction: row-reverse;
+}
+.card-description {
+  background-color: var(--background-secondary);
+  border-radius: 10px;
+  margin: 10px;
+}
+.email {
+  margin: 50px;
+}
+@media (max-width: 1140px) {
+  .card {
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  h3 {
+    padding: 0;
+  }
+
+  .card-image {
+    width: 250px;
+    margin: auto;
+  }
+  .card-description {
+    padding: 0 40px 0 40px;
+    width: 200px;
+    align-self: center;
+  }
+  .description {
+    /* margin: 0; */
+    /* background-color: var(--background-secondary); */
+    padding: 0;
+    width: 200px;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .img-container {
+    margin: 10px;
+  }
+  h1 {
+    font-size: var(--sml-primary-text-size);
+  }
+  h2 {
+    font-size: var(--sml-secondary-text-size);
+  }
+  h3 {
+    padding-top: 10px;
+    font-size: var(--sml-title-card-size);
+  }
+  p {
+    font-family: "ShareTechMono-Regular";
+    font-size: var(--sml-p-text-size);
+  }
+  #my-pic {
+    width: 200px;
+  }
+}
