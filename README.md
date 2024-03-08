@@ -5,7 +5,7 @@
 
 ## Description
 
-This is my portfolio that shows the main websites I have done during my second year of study on Noroff School.
+This is [my portfolio](https://portfolio-corrado.netlify.app/) that shows the main websites I have done during my second year of study on Noroff School.
 
 - Bid.com: [Semester Project 2](https://github.com/corrado1982/semeste-project-2)
 - eCom: [JavaScript Frameworks CA](https://github.com/corrado1982/Front-end-Frameworks-CA)
