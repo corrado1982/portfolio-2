@@ -17,6 +17,13 @@
   font-family: "ShareTechMono-Regular";
   src: url(font/ShareTechMono-Regular.ttf) format(truetype);
 }
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
 p,
 a {
   font-family: "ShareTechMono-Regular";
@@ -27,22 +34,27 @@ h2,
 h3 {
   font-family: Arial, Helvetica, sans-serif;
 }
-#top-page {
-  margin: 50px 0 0 0;
-
-  /* font-size: var(--primary-text-size); */
-}
 
 h1 {
   margin: 50px 0 0 0;
   font-size: var(--primary-text-size);
 }
 h2 {
-  /* margin: 100px; */
   font-size: var(--secondary-text-size);
 }
 h3 {
   font-size: var(--title-card-size);
+}
+h1,
+h2 {
+  color: var(--primary-text-color);
+  display: flex;
+  justify-content: center;
+}
+h3 {
+  color: var(--primary-text-color);
+  margin: 0;
+  padding: 10px 40px;
 }
 
 body {
@@ -51,7 +63,6 @@ body {
   background-color: var(--background-primary);
 }
 header {
-  /* color: var(--primary-text-color); */
   display: flex;
   justify-content: space-between;
   background-color: var(--background-secondary);
@@ -59,12 +70,14 @@ header {
   top: 0;
   z-index: 1;
 }
-
 .logo {
   margin-left: 10px;
   width: 50px;
   align-self: center;
   color: var(--primary-text-color);
+}
+#top-page {
+  margin: 50px 0 0 0;
 }
 nav {
   display: flex;
@@ -76,12 +89,9 @@ ul {
 }
 li {
   color: var(--primary-text-color);
-  /* text-decoration: none; */
 }
 a,
 i {
-  /* margin-left: 15px; */
-  /* text-decoration: none; */
   color: var(--primary-text-color);
 }
 a {
@@ -90,26 +100,13 @@ a {
 i {
   margin-top: 5px;
 }
-.flex {
-  display: flex;
-}
-.flex-center {
-  display: flex;
-  justify-content: center;
-  /* margin: auto; */
-}
+
 .about-me-card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-h1,
-h2 {
-  color: var(--primary-text-color);
-  display: flex;
-  justify-content: center;
-}
 #my-pic {
   margin-top: 20px;
   width: 400px;
@@ -117,7 +114,6 @@ h2 {
 }
 .card-image {
   width: 500px;
-  /* height: 300px; */
   border-radius: 2px;
   margin: auto 20px;
 }
@@ -134,25 +130,17 @@ h2 {
   margin: 10px;
 }
 .description {
-  /* margin: 0; */
-  /* background-color: var(--background-secondary); */
   padding: 0 40px 0 40px;
   width: 400px;
 }
-h3 {
-  color: var(--primary-text-color);
-  margin: 0;
-  padding: 10px 40px;
-}
+
 .card {
-  /* rgb(85, 85, 85) */
   background-color: var(--background-primary);
   margin: 20px;
   display: flex;
   flex-wrap: wrap;
   border-radius: 15px;
   border: 2px solid var(--border-color);
-  /* width: 1200px; */
 }
 .second-card {
   flex-direction: row-reverse;
@@ -171,10 +159,24 @@ h3 {
   }
 }
 @media (max-width: 700px) {
+  h1 {
+    font-size: var(--sml-primary-text-size);
+  }
+  h2 {
+    font-size: var(--sml-secondary-text-size);
+  }
   h3 {
     padding: 0;
+    padding-top: 10px;
+    font-size: var(--sml-title-card-size);
   }
-
+  p {
+    font-family: "ShareTechMono-Regular";
+    font-size: var(--sml-p-text-size);
+  }
+  #my-pic {
+    width: 200px;
+  }
   .card-image {
     width: 250px;
     margin: auto;
@@ -185,8 +187,6 @@ h3 {
     align-self: center;
   }
   .description {
-    /* margin: 0; */
-    /* background-color: var(--background-secondary); */
     padding: 0;
     width: 200px;
   }
@@ -195,22 +195,5 @@ h3 {
   }
   .img-container {
     margin: 10px;
-  }
-  h1 {
-    font-size: var(--sml-primary-text-size);
-  }
-  h2 {
-    font-size: var(--sml-secondary-text-size);
-  }
-  h3 {
-    padding-top: 10px;
-    font-size: var(--sml-title-card-size);
-  }
-  p {
-    font-family: "ShareTechMono-Regular";
-    font-size: var(--sml-p-text-size);
-  }
-  #my-pic {
-    width: 200px;
   }
 }
