@@ -24,11 +24,12 @@
   display: flex;
   justify-content: center;
 }
+a,
 p {
   font-family: "ShareTechMono-Regular";
   font-size: var(--p-text-size);
 }
-a,
+nav a,
 h1,
 h2,
 h3 {
