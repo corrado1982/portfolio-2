@@ -173,6 +173,9 @@ li {
   .card {
     flex-direction: column;
   }
+  .works-menu:active .submenu {
+    display: block;
+  }
 }
 @media (max-width: 700px) {
   h1 {
