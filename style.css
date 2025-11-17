@@ -95,7 +95,10 @@ nav a {
   position: absolute;
   background-color: var(--background-secondary);
 }
-.works-menu:active .submenu {
+/* .works-menu:hover .submenu {
+  display: block;
+} */
+.show {
   display: block;
 }
 ul {
