@@ -117,6 +117,10 @@ a {
   /* margin: 10px; */
   padding: 10px;
 }
+a:hover {
+  cursor: pointer;
+  color: aqua;
+}
 li {
   margin-block: 5px;
 }
