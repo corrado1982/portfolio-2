@@ -158,6 +158,12 @@ li {
   width: 400px;
 }
 
+.gigs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .card {
   /* background-color: var(--background-primary); */
   margin: 20px;
