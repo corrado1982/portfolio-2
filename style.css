@@ -184,8 +184,16 @@ li {
   .works-menu:active .submenu {
     display: block;
   }
+  iframe {
+    width: 450px;
+    /* height: 260px; */
+  }
 }
 @media (max-width: 700px) {
+  iframe {
+    width: 350px;
+    height: 260px;
+  }
   h1 {
     font-size: var(--sml-primary-text-size);
   }
