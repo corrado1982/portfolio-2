@@ -93,7 +93,7 @@ nav a {
   padding-left: 0;
   display: none;
   position: absolute;
-  background-color: rgb(58 58 58 / 70%);
+  background-color: var(--background-secondary);
   border-radius: 2px;
   margin-top: 12px;
   padding-bottom: 6px;
