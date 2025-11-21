@@ -24,6 +24,7 @@
   display: flex;
   justify-content: center;
 }
+li,
 a,
 p {
   font-family: "ShareTechMono-Regular";
@@ -117,12 +118,8 @@ ul {
   list-style: none;
 }
 
-a,
-li {
-  color: var(--primary-text-color);
-}
-
 a {
+  color: var(--primary-text-color);
   padding: 10px;
 }
 
