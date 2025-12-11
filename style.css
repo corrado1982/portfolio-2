@@ -6,7 +6,7 @@
   --primary-text-size: 4em;
   --secondary-text-size: 3em;
   --title-card-size: 2em;
-  --p-text-size: 1em;
+  --p-text-size: 1.1em;
   --primary-text-color: rgb(84, 212, 216);
   --secondary-text-color: rgb(214, 248, 255);
   --background-primary: rgb(0, 0, 0);
@@ -29,6 +29,9 @@ a,
 p {
   font-family: "ShareTechMono-Regular";
   font-size: var(--p-text-size);
+}
+b {
+  color: white;
 }
 nav a,
 h1,
