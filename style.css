@@ -156,11 +156,12 @@ li {
   margin: 20px;
 }
 .about-me-description {
-  padding: 50px;
+  padding: 20px 50px;
   max-width: 600px;
   border-radius: 10px;
   border: 2px solid var(--border-color);
   margin: 10px;
+  color: var(--primary-text-color);
 }
 .description {
   padding: 0 40px 0 40px;
