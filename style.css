@@ -17,6 +17,11 @@
   font-family: "ShareTechMono-Regular";
   src: url(font/ShareTechMono-Regular.ttf) format(truetype);
 }
+
+.alert {
+  color: red;
+}
+
 .flex {
   display: flex;
 }
